@@ -452,8 +452,25 @@
 		</dict>
 		<key>#TextOnly</key>
 		<false/>
+		<key>Hide</key>
+		<array>
+			<string>E9B20F22-DDE0-3891-B2C8-C4C7243D705D</string>
+			<string>D2281D8F-39DD-47C5-AE4E-4F0F5284602B </string>
+			<string>3B67F35D-192B-493D-82C9-4650D86FC523 </string>
+		</array>
 		<key>Language</key>
 		<string>pl:0</string>
+		<key>Scan</key>
+		<dict>
+			<key>Entries</key>
+			<true/>
+			<key>Legacy</key>
+			<false/>
+			<key>Linux</key>
+			<false/>
+			<key>Tool</key>
+			<false/>
+		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
@@ -507,11 +524,20 @@
 		<string>03010300FFFF0001</string>
 		<key>#ig-platform-id</key>
 		<string>0x01620005</string>
+		<key>EDID</key>
+		<dict>
+			<key>Inject</key>
+			<true/>
+		</dict>
 		<key>Inject</key>
 		<dict>
+			<key>ATI</key>
+			<true/>
 			<key>Intel</key>
 			<true/>
 		</dict>
+		<key>LoadVBios</key>
+		<true/>
 		<key>ig-platform-id</key>
 		<string>0x19120000</string>
 	</dict>
@@ -641,15 +667,15 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
+				<string>TRIM</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				AEFQUExFIFNTRAA=
 				</data>
 				<key>Name</key>
-				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
 				AAAAAAAAAAAAAAA=
@@ -789,6 +815,8 @@
 		<string>Mac-B809C3757DA9BB8D</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C025257004NDP00AD</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>ChassisAssetTag</key>
@@ -809,6 +837,8 @@
 		<string>iMac17,1</string>
 		<key>SerialNumber</key>
 		<string>C02PVMC9H2YQ</string>
+		<key>SmUUID</key>
+		<string>B64E7D83-F82F-4D7A-9E35-DB023D32521F</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

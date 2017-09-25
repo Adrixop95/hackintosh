@@ -281,8 +281,6 @@
 		<string>PBR</string>
 		<key>NeverDoRecovery</key>
 		<true/>
-		<key>Timeout</key>
-		<integer>5</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -588,6 +586,8 @@
 		</dict>
 		<key>#TextOnly</key>
 		<false/>
+		<key>CustomIcons</key>
+		<true/>
 		<key>Hide</key>
 		<array>
 			<string>2DAA428C-4E67-4C19-9121-AA83B67C83F5</string>
@@ -609,7 +609,7 @@
 			<true/>
 		</dict>
 		<key>ScreenResolution</key>
-		<string>1920x1200</string>
+		<string>1920x1080</string>
 		<key>Theme</key>
 		<string>embedded</string>
 	</dict>

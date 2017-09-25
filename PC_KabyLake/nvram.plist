@@ -10,17 +10,25 @@
 	<data>
 	WWVz
 	</data>
+	<key>LocationServicesEnabled</key>
+	<data>
+	AQ==
+	</data>
 	<key>OsxAptioFixDrv-RelocBase</key>
 	<data>
 	AGC3YAAAAAA=
 	</data>
 	<key>SystemAudioVolume</key>
 	<data>
-	MA==
+	Jw==
 	</data>
 	<key>SystemAudioVolumeDB</key>
 	<data>
-	8A==
+	5w==
+	</data>
+	<key>bluetoothActiveControllerInfo</key>
+	<data>
+	AQASCgAAAACwFAAafdpxDw==
 	</data>
 	<key>bootercfg</key>
 	<data>

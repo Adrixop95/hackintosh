@@ -1,4 +1,4 @@
-# Najwydajniejszy Hackintosh dump configów
+# Najwydajniejszy Hackintosh aka dump configów
 
 ### Hardware 
 ```

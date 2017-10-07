@@ -35,7 +35,10 @@ Kontroler audio: Realtek ALC892
 ### Status
 Laptop Lenovo Z51-70
 
-+ W pełni nieskonfigurowany
++ W pełni nieskonfigurowany do macOS 10.13 High Sierra
++ Nie można uruchomić Intel RealSense 3D Camera
++ Nie można uruchomić czytnika kart SD (Realtek USB 2.0 Card Reader)
++ Nie działa sleep
 
 
 Custom PC KabyLake

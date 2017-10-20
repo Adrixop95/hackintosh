@@ -18,7 +18,7 @@ Procesor: Intel i5-7400
 Karta graficzna: Gigabyte RX460 2GB
 RAM: 16GB
 Karta sieciowa ethernet: Intel I219-V Gigabit
-Wi-Fi: TP-LINK TL-WN881ND (AR9287)
+Wi-Fi: BCM94331CD
 Kontroler audio: Realtek ALC892
 ```
 ```
@@ -28,7 +28,7 @@ Procesor: Intel i5-6400
 Karta graficzna:  Intel HD Graphics 530
 RAM: <brak>
 Karta sieciowa ethernet: Realtek RTL8111H
-Wi-Fi: <brak>
+Wi-Fi: TP-LINK TL-WN881ND (AR9287)
 Kontroler audio: Realtek ALC892
 ```
 

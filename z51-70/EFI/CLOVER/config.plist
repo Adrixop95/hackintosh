@@ -2,11 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>#DisableDrivers</key>
-	<array>
-		<string>CsmVideoDxe</string>
-		<string>VBoxExt4</string>
-	</array>
 	<key>ACPI</key>
 	<dict>
 		<key>#DropMCFG</key>
@@ -117,13 +112,21 @@
 			<dict>
 				<key>DeleteUnused_400000</key>
 				<true/>
+				<key>FIX_RTC_20000</key>
+				<true/>
 				<key>FIX_TMR_40000</key>
 				<true/>
+				<key>FIX_WAK_200000</key>
+				<true/>
 				<key>FixHPET_0010</key>
+				<true/>
+				<key>FixHeaders_20000000</key>
 				<true/>
 				<key>FixIPIC_0040</key>
 				<true/>
 				<key>FixRegions_10000000</key>
+				<true/>
+				<key>FixShutdown_0004</key>
 				<true/>
 			</dict>
 			<key>Name</key>
@@ -394,16 +397,6 @@
 				<false/>
 			</dict>
 		</dict>
-		<key>SortedOrder</key>
-		<array>
-			<string>ssdt.aml</string>
-			<string>SSDT-PType1.aml</string>
-			<string>SSDT-XOSI.aml</string>
-			<string>SSDT-PRW.aml</string>
-			<string>SSDT-PNLF.aml</string>
-			<string>SSDT-SBUS.aml</string>
-			<string>SSDT-BATT.aml</string>
-		</array>
 	</dict>
 	<key>Boot</key>
 	<dict>
@@ -824,9 +817,9 @@
 				</data>
 			</dict>
 		</array>
-		<key>AppleRTC</key>
+		<key>AppleIntelCPUPM</key>
 		<true/>
-		<key>AsusAICPUPM</key>
+		<key>AppleRTC</key>
 		<true/>
 		<key>Debug</key>
 		<false/>
@@ -915,7 +908,7 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x67</string>
+		<string>0x3E7</string>
 		<key>MLB</key>
 		<string>C02Q67SAH1DPLOPKJ</string>
 		<key>ROM</key>
@@ -1033,37 +1026,45 @@
 		<key>#Version</key>
 		<string>1.0</string>
 		<key>BiosReleaseDate</key>
-		<string>06/26/2017</string>
+		<string>08/07/2017</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP121.88Z.0168.B01.1706261516</string>
+		<string>MBA71.88Z.0171.B00.1708072210</string>
 		<key>Board-ID</key>
-		<string>Mac-E43C1C25D4880AD6</string>
+		<string>Mac-937CB26E2E02BB01</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02Q67SAH1DPLOPKJ</string>
+		<string>C02510403GUFF4MFB</string>
 		<key>BoardType</key>
 		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>MacBookAir7,2</string>
 		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
+		<string>Air-Enclosure</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x08</string>
+		<string>0x09</string>
 		<key>Family</key>
-		<string>MacBook Pro</string>
+		<string>MacBook Air</string>
+		<key>FirmwareFeatures</key>
+		<string>0xE00FE137</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>Mobile</key>
 		<true/>
+		<key>PlatformFeature</key>
+		<string>0xFFFF</string>
 		<key>ProductName</key>
-		<string>MacBookPro12,1</string>
+		<string>MacBookAir7,2</string>
 		<key>SerialNumber</key>
-		<string>C02Q67SAH1DP</string>
+		<string>C02PDQ69G940</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

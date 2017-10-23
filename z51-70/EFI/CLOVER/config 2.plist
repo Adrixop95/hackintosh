@@ -791,6 +791,8 @@
 			<key>Intel</key>
 			<false/>
 		</dict>
+		<key>ig-platform-id</key>
+		<string>0x16260006</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -898,9 +900,9 @@
 				</data>
 			</dict>
 		</array>
-		<key>AppleRTC</key>
+		<key>AppleIntelCPUPM</key>
 		<true/>
-		<key>AsusAICPUPM</key>
+		<key>AppleRTC</key>
 		<true/>
 		<key>Debug</key>
 		<false/>

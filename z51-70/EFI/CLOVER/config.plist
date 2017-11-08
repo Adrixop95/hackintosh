@@ -110,23 +110,23 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>DeleteUnused_400000</key>
+				<key>DeleteUnused</key>
 				<true/>
-				<key>FIX_RTC_20000</key>
+				<key>FixHPET</key>
 				<true/>
-				<key>FIX_TMR_40000</key>
+				<key>FixHeaders</key>
 				<true/>
-				<key>FIX_WAK_200000</key>
+				<key>FixIPIC</key>
 				<true/>
-				<key>FixHPET_0010</key>
+				<key>FixRTC</key>
 				<true/>
-				<key>FixHeaders_20000000</key>
+				<key>FixRegions</key>
 				<true/>
-				<key>FixIPIC_0040</key>
+				<key>FixShutdown</key>
 				<true/>
-				<key>FixRegions_10000000</key>
+				<key>FixTMR</key>
 				<true/>
-				<key>FixShutdown_0004</key>
+				<key>FixWAK</key>
 				<true/>
 			</dict>
 			<key>Name</key>
@@ -827,12 +827,12 @@
 		<false/>
 		<key>KernelCpu</key>
 		<false/>
-		<key>KernelHaswellE</key>
-		<false/>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
 		<true/>
+		<key>KernelXCPM</key>
+		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>

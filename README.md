@@ -12,6 +12,15 @@ Wi-Fi: Dell DW1560 (Broadcom BCM94352Z)
 Kontroler audio: Realtek ALC236
 ```
 ```
+# Laptop Dell Latitude 3340
+Procesor: Intel i5-4200u
+Karta graficzna (zintegrowana): Intel HD Graphics 4400
+RAM: 8GB
+Karta sieciowa Ethernet: Intel I218-LM
+Wi-Fi:Dell DW1580 (Broadcom BCM 94352Z)
+Audio: Realtek ALC255
+```
+```
 # Custom PC KabyLake
 Płyta główna: MSI B250m Mortar
 Procesor: Intel i5-7400

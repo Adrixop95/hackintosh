@@ -2,23 +2,13 @@
 
 ### Hardware 
 ```
-# Laptop Lenovo Z51-70
-Procesor: Intel i5-5200U
-Karta graficzna (zintegrowana): Intel HD Graphics 5500
-Karta graficzna (dedykowana):  AMD R9 M375
-RAM: 8GB
-Karta sieciowa ethernet: Realtek RTL8168/8111
-Wi-Fi: Dell DW1560 (Broadcom BCM94352Z)
-Kontroler audio: Realtek ALC236
-```
-```
 # Laptop Dell Latitude 3340
 Procesor: Intel i5-4200u
 Karta graficzna (zintegrowana): Intel HD Graphics 4400
 RAM: 8GB
 Karta sieciowa Ethernet: Intel I218-LM
 Wi-Fi:Dell DW1580 (Broadcom BCM 94352Z)
-Audio: Realtek ALC255
+Kontroler audio: Realtek ALC255
 ```
 ```
 # Custom PC KabyLake
@@ -30,46 +20,17 @@ Karta sieciowa ethernet: Intel I219-V Gigabit
 Wi-Fi: BCM94331CD
 Kontroler audio: Realtek ALC892
 ```
-```
-# Custom PC Skylake
-Płyta główna: MSI B150m Mortar
-Procesor: Intel i5-6400
-Karta graficzna:  Intel HD Graphics 530
-RAM: <brak>
-Karta sieciowa ethernet: Realtek RTL8111H
-Wi-Fi: TP-LINK TL-WN881ND (AR9287)
-Kontroler audio: Realtek ALC892
-```
 
 ### Status
-Laptop Lenovo Z51-70
-
-+ W pełni nieskonfigurowany do macOS 10.13 High Sierra
-+ Nie można uruchomić Intel RealSense 3D Camera
-+ Nie można uruchomić czytnika kart SD (Realtek USB 2.0 Card Reader)
-+ Nie działa sleep
-
 
 Custom PC KabyLake
 
-+ W pełni skonfigurowany (problemy z freezami, USB).
-+ Jako jedyny skonfigurowany do macOS 10.13 High Sierra.
++ W pełni skonfigurowany.
 + Dualboot Windows 10 + macOS 10.13 High Sierra.
 
-Custom PC Skylake
+Dell Latitude 3340
 
-+ Z całego buildu została płyta główa i procesor. Brakuje zasilacza, pamięci ram oraz dysku.
-
-### Spis kextów w sprawnych hackintoshach
-```
-# Custom PC KabyLake
-> EFI:
-AppleALC.kext
-CodecCommander.kext
-FakeSMC.kext
-IntelMausiEthernet.kext
-Lilu.kext
-Shiki.kext
-USBInjectAll.kext
-WhateverGreen.kext
-```
++ Nie działa sleep.
++ Nie działają porty video.
++ Nie działa czytnik kart SD.
++ Nie działają w pełni klawisze funkcyjne.

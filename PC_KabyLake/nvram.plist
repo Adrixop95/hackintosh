@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>EFIBluetoothDelay</key>
-	<data>
-	uAs=
-	</data>
 	<key>EFILoginHiDPI</key>
 	<data>
 	AQAAAA==
@@ -20,15 +16,15 @@
 	</data>
 	<key>OsxAptioFixDrv-RelocBase</key>
 	<data>
-	APBCMgAAAAA=
+	AFAPXAAAAAA=
 	</data>
 	<key>SystemAudioVolume</key>
 	<data>
-	KQ==
+	LQ==
 	</data>
 	<key>SystemAudioVolumeDB</key>
 	<data>
-	6Q==
+	7Q==
 	</data>
 	<key>bluetoothActiveControllerInfo</key>
 	<data>
@@ -38,13 +34,15 @@
 	<data>
 	i4KsBQAAkxT0+VHlyFM=
 	</data>
+	<key>boot-args</key>
+	<string>kext-dev-mode=1</string>
 	<key>bootercfg</key>
 	<data>
 	KAA=
 	</data>
 	<key>csr-active-config</key>
 	<data>
-	5wMAAA==
+	ZwAAAA==
 	</data>
 	<key>efi-boot-device</key>
 	<data>

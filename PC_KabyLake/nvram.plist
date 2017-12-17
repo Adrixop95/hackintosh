@@ -14,49 +14,43 @@
 	<data>
 	AQ==
 	</data>
+	<key>MyVar</key>
+	<data>
+	VGVzdFZhbHVl
+	</data>
 	<key>OsxAptioFixDrv-RelocBase</key>
 	<data>
-	AFAPXAAAAAA=
+	AHDpPgAAAAA=
 	</data>
 	<key>SystemAudioVolume</key>
 	<data>
-	LQ==
+	Jw==
 	</data>
 	<key>SystemAudioVolumeDB</key>
 	<data>
-	7Q==
+	5w==
 	</data>
-	<key>bluetoothActiveControllerInfo</key>
-	<data>
-	i4KsBQAAAACTFPT5UeXIUw==
-	</data>
-	<key>bluetoothInternalControllerInfo</key>
-	<data>
-	i4KsBQAAkxT0+VHlyFM=
-	</data>
-	<key>boot-args</key>
-	<string>kext-dev-mode=1</string>
 	<key>bootercfg</key>
 	<data>
 	KAA=
 	</data>
 	<key>csr-active-config</key>
 	<data>
-	ZwAAAA==
+	5wMAAA==
 	</data>
 	<key>efi-boot-device</key>
 	<data>
 	PGFycmF5PjxkaWN0PjxrZXk+SU9NYXRjaDwva2V5PjxkaWN0PjxrZXk+SU9Qcm92aWRl
 	ckNsYXNzPC9rZXk+PHN0cmluZz5JT01lZGlhPC9zdHJpbmc+PGtleT5JT1Byb3BlcnR5
-	TWF0Y2g8L2tleT48ZGljdD48a2V5PlVVSUQ8L2tleT48c3RyaW5nPjIyMEM0NUFCLTMw
-	QUUtNDE2RS05N0RBLTRDRTEzNTg3MUMxQzwvc3RyaW5nPjwvZGljdD48L2RpY3Q+PC9k
+	TWF0Y2g8L2tleT48ZGljdD48a2V5PlVVSUQ8L2tleT48c3RyaW5nPkZFREUwNDlGLTZD
+	RkYtNDBGRS05RTMwLTkyOTMzNzc2MUI1RDwvc3RyaW5nPjwvZGljdD48L2RpY3Q+PC9k
 	aWN0PjwvYXJyYXk+
 	</data>
 	<key>efi-boot-device-data</key>
 	<data>
 	AgEMANBBAwoAAAAAAQEGAAAXAxIKAAUA//8AAAQBKgACAAAAKEAGAAAAAABgC/MNAAAA
-	AKtFDCKuMG5Bl9pM4TWHHBwCAgQDJAD3/HS+fAvzSZFHAfQELmhCgdGDBgGVjEKgLruv
-	YG47VH//BAA=
+	AJ8E3v7/bP5AnjCSkzd2G10CAgQDJAD3/HS+fAvzSZFHAfQELmhCSZtp/aMlqEyBukdN
+	iIUvBX//BAA=
 	</data>
 	<key>fakesmc-key-#KEY-ui32</key>
 	<data>
@@ -124,7 +118,7 @@
 	</data>
 	<key>fmm-computer-name</key>
 	<data>
-	SGFja2ludG9zaCAoQWRyaWFuIFJ1cGFsYSk=
+	aU1hYyAoQWRyaWFuKQ==
 	</data>
 	<key>prev-lang:kbd</key>
 	<data>
@@ -135,8 +129,8 @@
 	<key>specialbootdevice</key>
 	<data>
 	AgEMANBBAwoAAAAAAQEGAAAXAxIKAAUA//8AAAQBKgACAAAAKEAGAAAAAABgC/MNAAAA
-	AKtFDCKuMG5Bl9pM4TWHHBwCAgQDJAD3/HS+fAvzSZFHAfQELmhCgdGDBgGVjEKgLruv
-	YG47VH//BAA=
+	AJ8E3v7/bP5AnjCSkzd2G10CAgQDJAD3/HS+fAvzSZFHAfQELmhCSZtp/aMlqEyBukdN
+	iIUvBX//BAA=
 	</data>
 </dict>
 </plist>

@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>#DisableDrivers</key>
+	<array>
+		<string>CsmVideoDxe</string>
+		<string>VBoxExt4</string>
+	</array>
 	<key>ACPI</key>
 	<dict>
 		<key>#DropMCFG</key>
@@ -110,6 +115,8 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
+				<key>AddMCHC</key>
+				<true/>
 				<key>DeleteUnused</key>
 				<true/>
 				<key>FixHPET</key>
@@ -117,6 +124,8 @@
 				<key>FixHeaders</key>
 				<true/>
 				<key>FixIPIC</key>
+				<true/>
+				<key>FixMutex</key>
 				<true/>
 				<key>FixRTC</key>
 				<true/>
@@ -215,6 +224,20 @@
 					RUgwMg==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change GFX0 to IGPU</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R0ZYMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					SUdQVQ==
+					</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -286,7 +309,8 @@
 		<array>
 			<string>SSDT.aml</string>
 			<string>SSDT-SBUS.aml</string>
-			<string>SSDT-ARPT.aml</string>
+			<string>SSDT-USBX.aml</string>
+			<string>SSDT-DIDLE.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -300,7 +324,7 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>darkwake=8</string>
+		<string>-v darkwake=0 -disablegfxfirmware</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
@@ -311,8 +335,12 @@
 		<string>PBR</string>
 		<key>NeverDoRecovery</key>
 		<true/>
+		<key>NeverHibernate</key>
+		<true/>
+		<key>SignatureFixup</key>
+		<true/>
 		<key>Timeout</key>
-		<integer>-1</integer>
+		<integer>10</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -440,23 +468,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>LPCB</string>
-				<key>CustomProperties</key>
-				<array>
-					<dict>
-						<key>Disabled</key>
-						<false/>
-						<key>Key</key>
-						<string>compatible</string>
-						<key>Value</key>
-						<string>pci8086,9cc1</string>
-					</dict>
-				</array>
-				<key>PciAddr</key>
-				<string>00:1F.00</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>USB</string>
 				<key>CustomProperties</key>
 				<array>
@@ -473,6 +484,57 @@
 				</array>
 				<key>PciAddr</key>
 				<string>00:14.00</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>PEG0</string>
+				<key>CustomProperties</key>
+				<array>
+					<dict>
+						<key>Disabled</key>
+						<false/>
+						<key>Key</key>
+						<string>AAPL,slot-name</string>
+						<key>Value</key>
+						<string>Slot-1</string>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<false/>
+						<key>Key</key>
+						<string>@0,AAPL,boot-display</string>
+						<key>Value</key>
+						<data>
+						</data>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<false/>
+						<key>Key</key>
+						<string>model</string>
+						<key>Value</key>
+						<string>AMD Radeon RX 460</string>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<false/>
+						<key>Key</key>
+						<string>CFG,CFG_FB_LIMIT</string>
+						<key>Value</key>
+						<integer>3</integer>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<false/>
+						<key>Key</key>
+						<string>CFG,CFG_USE_AGDC</string>
+						<key>Value</key>
+						<data>
+						</data>
+					</dict>
+				</array>
+				<key>PciAddr</key>
+				<string>01:00.00</string>
 			</dict>
 		</array>
 		<key>Audio</key>
@@ -614,74 +676,13 @@
 		</dict>
 		<key>#TextOnly</key>
 		<false/>
-		<key>Custom</key>
-		<dict>
-			<key>Entries</key>
-			<array>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>FullTitle</key>
-					<string>Preboot High Sierra</string>
-					<key>Hidden</key>
-					<true/>
-					<key>Ignore</key>
-					<false/>
-					<key>InjectKexts</key>
-					<true/>
-					<key>NoCaches</key>
-					<false/>
-					<key>Path</key>
-					<string>\0683D181-9501-428C-A02E-BBAF606E3B54\System\Library\CoreServices\boot.efi</string>
-					<key>Type</key>
-					<string>OSX</string>
-					<key>Volume</key>
-					<string>94964F567F06884C87487CAC256DB3B3</string>
-				</dict>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>FullTitle</key>
-					<string>APFS Recovery</string>
-					<key>Hidden</key>
-					<true/>
-					<key>Ignore</key>
-					<false/>
-					<key>InjectKexts</key>
-					<true/>
-					<key>NoCaches</key>
-					<false/>
-					<key>Path</key>
-					<string>\0683D181-9501-428C-A02E-BBAF606E3B54\boot.efi</string>
-					<key>Type</key>
-					<string>OSXRecovery</string>
-					<key>Volume</key>
-					<string>A602D335794919499CA6ADE1346765AA</string>
-				</dict>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>FullTitle</key>
-					<string>High Sierra Install Preboot</string>
-					<key>Hidden</key>
-					<true/>
-					<key>Ignore</key>
-					<false/>
-					<key>InjectKexts</key>
-					<true/>
-					<key>NoCaches</key>
-					<false/>
-					<key>Path</key>
-					<string>\0683D181-9501-428C-A02E-BBAF606E3B54\com.apple.installer\boot.efi</string>
-					<key>Type</key>
-					<string>OSXInstaller</string>
-					<key>Volume</key>
-					<string>94964F567F06884C87487CAC256DB3B3</string>
-				</dict>
-			</array>
-		</dict>
 		<key>CustomIcons</key>
 		<true/>
+		<key>Hide</key>
+		<array>
+			<string>Preboot</string>
+			<string>Recovery</string>
+		</array>
 		<key>Language</key>
 		<string>pl:0</string>
 		<key>Scan</key>
@@ -750,8 +751,15 @@
 		<string>03010300FFFF0001</string>
 		<key>#ig-platform-id</key>
 		<string>0x01620005</string>
+		<key>Inject</key>
+		<dict>
+			<key>Intel</key>
+			<true/>
+		</dict>
 		<key>RadeonDeInit</key>
 		<true/>
+		<key>ig-platform-id</key>
+		<string>0x59120003</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -916,7 +924,7 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x67</string>
+		<string>0x3E7</string>
 		<key>MLB</key>
 		<string>C02752108GUDP008C</string>
 		<key>ROM</key>

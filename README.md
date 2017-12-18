@@ -2,15 +2,6 @@
 
 ### Hardware 
 ```
-# Laptop Dell Latitude 3340
-Procesor: Intel i5-4200u
-Karta graficzna (zintegrowana): Intel HD Graphics 4400
-RAM: 8GB
-Karta sieciowa Ethernet: Intel I218-LM
-Wi-Fi:Dell DW1580 (Broadcom BCM 94352Z)
-Kontroler audio: Realtek ALC255
-```
-```
 # Custom PC KabyLake
 Płyta główna: MSI B250m Mortar
 Procesor: Intel i5-7400
@@ -27,10 +18,3 @@ Custom PC KabyLake
 
 + W pełni skonfigurowany.
 + Dualboot Windows 10 + macOS 10.13 High Sierra.
-
-Dell Latitude 3340
-
-+ Nie działa sleep.
-+ Nie działają porty video.
-+ Nie działa czytnik kart SD.
-+ Nie działają w pełni klawisze funkcyjne.

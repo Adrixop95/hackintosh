@@ -238,14 +238,24 @@
 					SUdQVQ==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change SAT0 to SATA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					U0FUMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					U0FUQQ==
+					</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
-		<key>DisabledAML</key>
-		<array>
-			<string>SSDT-PT1.aml</string>
-		</array>
 		<key>DropTables</key>
 		<array>
 			<dict>
@@ -316,15 +326,15 @@
 	<key>Boot</key>
 	<dict>
 		<key>##Arguments</key>
-		<string>kext-dev-mode=1 rootless=0</string>
+		<string>kext-dev-mode=1 slide=0 rootless=0</string>
 		<key>#Arguments</key>
-		<string>-v arch=x86_64 slide=0 darkwake=0</string>
+		<string>-v arch=x86_64 darkwake=0</string>
 		<key>#LegacyBiosDefaultEntry</key>
 		<integer>0</integer>
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>-v darkwake=0 -disablegfxfirmware</string>
+		<string>darkwake=0 -disablegfxfirmware</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
@@ -531,6 +541,14 @@
 						<key>Value</key>
 						<data>
 						</data>
+					</dict>
+					<dict>
+						<key>Disabled</key>
+						<true/>
+						<key>Key</key>
+						<string>hda-gfx</string>
+						<key>Value</key>
+						<string>onboard-2</string>
 					</dict>
 				</array>
 				<key>PciAddr</key>

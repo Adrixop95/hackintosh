@@ -1,5 +1,5 @@
 
-Clover EFI installer log - Thu Feb  8 19:14:20 CET 2018
+Clover EFI installer log - Thu Feb  8 20:47:06 CET 2018
 Installer version: v2.4k r4407 EFI bootloader
 ======================================================
 /dev/disk0 (internal, physical):
@@ -22,7 +22,7 @@ Installer version: v2.4k r4407 EFI bootloader
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      APFS Container Scheme -                      +119.8 GB   disk3
                                  Physical Store disk2s2
-   1:                APFS Volume Macintosh HD            51.4 GB    disk3s1
+   1:                APFS Volume Macintosh HD            51.3 GB    disk3s1
    2:                APFS Volume Preboot                 21.8 MB    disk3s2
    3:                APFS Volume Recovery                509.8 MB   disk3s3
    4:                APFS Volume VM                      20.5 KB    disk3s4
@@ -30,7 +30,7 @@ Installer version: v2.4k r4407 EFI bootloader
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/Macintosh HD/EFIROOTDIR/EFI folder to /Volumes/Macintosh HD/EFI-Backups/r4398/2018-02-08-19h14/EFI
+Backing up /Volumes/Macintosh HD/EFIROOTDIR/EFI folder to /Volumes/Macintosh HD/EFI-Backups/r4407/2018-02-08-20h47/EFI
 ======================================================
 Installing BootSectors/BootLoader
 

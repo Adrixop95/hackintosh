@@ -1,0 +1,55 @@
+
+Clover EFI installer log - Wed Feb 28 15:19:25 CET 2018
+Installer version: v2.4k r4417 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *1.0 TB     disk0
+   1:               Windows_NTFS Data                    1.0 TB     disk0s1
+
+/dev/disk1 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *120.0 GB   disk1
+   1:       Microsoft Basic Data Windows                 120.0 GB   disk1s1
+
+/dev/disk2 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *120.0 GB   disk2
+   1:                        EFI EFI                     209.7 MB   disk2s1
+   2:                 Apple_APFS Container disk3         119.8 GB   disk2s2
+
+/dev/disk3 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +119.8 GB   disk3
+                                 Physical Store disk2s2
+   1:                APFS Volume Macintosh HD            61.0 GB    disk3s1
+   2:                APFS Volume Preboot                 21.8 MB    disk3s2
+   3:                APFS Volume Recovery                509.8 MB   disk3s3
+   4:                APFS Volume VM                      24.6 KB    disk3s4
+
+/dev/disk4 (disk image):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        +9.3 GB     disk4
+   1:                        EFI EFI                     209.7 MB   disk4s1
+   2:                  Apple_HFS InstallESD              9.0 GB     disk4s2
+
+/dev/disk5 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *15.5 GB    disk5
+   1:                        EFI EFI                     209.7 MB   disk5s1
+   2:                  Apple_HFS Install macOS High S... 15.2 GB    disk5s2
+
+======================================================
+Backing up EFI files
+
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /Volumes/Install macOS High Sierra
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /Volumes/Install macOS High Sierra
+
+Theme 'metal' (defined in config.plist) not found !
+Using default theme 'embedded'
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================

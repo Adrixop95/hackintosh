@@ -38,3 +38,4 @@ Dell Latitude 3340
 + Problemy z touchpadem.
 + Problemy z wyjściem Mini Displayport.
 + Problemy z czytnikiem kart pamięci.
++ ?????

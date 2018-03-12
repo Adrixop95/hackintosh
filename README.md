@@ -1,4 +1,5 @@
 # Najwydajniejszy Hackintosh aka dump configów
+Jeśli używasz tego configu u siebie wygeneruj ponownie SMBIOS.
 
 ### Hardware 
 ```
@@ -21,7 +22,7 @@ Karta sieciowa ethernet: Intel I218-LM
 Wi-Fi: DW1560 / BCM4352
 Kontroler audio: Realtek ALC255
 Czytnik kart pamięci: O2Micro / ID urządzenia: 1217-8520 / ID podsystemu: 1028-061F
-Touchpad: Alps
+Touchpad: Alps v3
 ```
 
 ### Status
@@ -30,3 +31,10 @@ Custom PC KabyLake
 
 + W pełni skonfigurowany.
 + Dualboot Windows 10 + macOS 10.13 High Sierra.
+
+Dell Latitude 3340
+
++ Brak czasu/chęci na poprawki.
++ Problemy z touchpadem.
++ Problemy z wyjściem Mini Displayport.
++ Problemy z czytnikiem kart pamięci.

@@ -121,8 +121,6 @@
 				<true/>
 				<key>FixHPET</key>
 				<true/>
-				<key>FixHeaders</key>
-				<true/>
 				<key>FixIPIC</key>
 				<true/>
 				<key>FixMutex</key>
@@ -277,6 +275,8 @@
 				<string>Cpu0Ist</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<true/>
 		<key>HaltEnabler</key>
 		<true/>
 		<key>SSDT</key>
@@ -310,14 +310,15 @@
 			<key>Generate</key>
 			<dict>
 				<key>CStates</key>
-				<false/>
+				<true/>
 				<key>PStates</key>
-				<false/>
+				<true/>
+				<key>PluginType</key>
+				<true/>
 			</dict>
 		</dict>
 		<key>SortedOrder</key>
 		<array>
-			<string>SSDT.aml</string>
 			<string>SSDT-SBUS.aml</string>
 			<string>SSDT-USBX.aml</string>
 			<string>SSDT-DIDLE.aml</string>
@@ -341,8 +342,6 @@
 		<string>boot.efi</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
-		<key>Fast</key>
-		<true/>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>NeverDoRecovery</key>
@@ -351,6 +350,8 @@
 		<true/>
 		<key>SignatureFixup</key>
 		<true/>
+		<key>Timeout</key>
+		<integer>10</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -559,6 +560,8 @@
 		<dict>
 			<key>#Inject</key>
 			<string>0x0887</string>
+			<key>AFGLowPowerState</key>
+			<false/>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -717,7 +720,7 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>clover-theme-minimal-master</string>
+		<string>random</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>

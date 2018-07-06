@@ -2,6 +2,16 @@
 Jeśli używasz tego configu u siebie wygeneruj ponownie SMBIOS.
 
 ### Hardware 
+
+```
+# Custom PC CoffeLake
+Płyta główna: MSI H370 GAMING PLUS
+Procesor: Intel i7-8700 3.2GHz
+Karta Graficzna: AMD ASUS RX580 8GB
+RAM: HyperX Fury 16GB DDR4 2133MHz
+LAN: Intel I219-V Gigabit
+Kontroler audio: Realtek ALC892 
+```
 ```
 # Custom PC KabyLake
 Płyta główna: MSI B250m Mortar
@@ -26,6 +36,9 @@ Touchpad: Alps v3
 ```
 
 ### Status
+Custom PC CoffeLake
++ Soon™
+
 
 Custom PC KabyLake
 

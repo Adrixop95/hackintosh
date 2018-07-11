@@ -10,6 +10,7 @@ Procesor: Intel i7-8700 3.2GHz
 Karta Graficzna: AMD ASUS RX580 8GB
 RAM: HyperX Fury 16GB DDR4 2133MHz
 LAN: Intel I219-V Gigabit
+Wi-Fi: BCM943602CS
 Kontroler audio: Realtek ALC892 
 ```
 ```

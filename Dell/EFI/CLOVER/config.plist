@@ -71,7 +71,7 @@
 				<key>AddIMEI</key>
 				<false/>
 				<key>AddMCHC</key>
-				<false/>
+				<true/>
 				<key>AddPNLF</key>
 				<false/>
 				<key>DeleteUnused</key>
@@ -81,7 +81,7 @@
 				<key>FixACST</key>
 				<false/>
 				<key>FixADP1</key>
-				<false/>
+				<true/>
 				<key>FixAirport</key>
 				<false/>
 				<key>FixDarwin</key>
@@ -96,8 +96,6 @@
 				<false/>
 				<key>FixHPET</key>
 				<true/>
-				<key>FixHeaders</key>
-				<true/>
 				<key>FixIDE</key>
 				<false/>
 				<key>FixIPIC</key>
@@ -107,7 +105,7 @@
 				<key>FixLAN</key>
 				<false/>
 				<key>FixMutex</key>
-				<false/>
+				<true/>
 				<key>FixRTC</key>
 				<true/>
 				<key>FixRegions</key>
@@ -187,6 +185,90 @@
 					SUdQVQ==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>rename _OSI to XOSI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X09TSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WE9TSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change ECDV to EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUNEVg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change SAT0 to SATA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					U0FUMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					U0FUQQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method GPRW to XPRW</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R1BSVwI=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBSVwI=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					T1NJRA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFNJRA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename BRT6 to BRTX, use with SSDT-BRT6.aml, SSDT-PNLF.aml, AppleBacklightInjector.kext, and VoodooPS2Controller.kext to fix brightness keys</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					FCBCUlQ2Ag==
+					</data>
+					<key>Replace</key>
+					<data>
+					FCBCUlRYAg==
+					</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -214,8 +296,19 @@
 				<string>Cpu0Ist</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<true/>
+		<key>FixMCFG</key>
+		<true/>
 		<key>HaltEnabler</key>
 		<true/>
+		<key>RenameDevices</key>
+		<dict>
+			<key>_SB.PCI0.RP02.PXSX</key>
+			<string>SDXC</string>
+			<key>_SB.PCI0.RP04.PXSX</key>
+			<string>ARPT</string>
+		</dict>
 		<key>SSDT</key>
 		<dict>
 			<key>#C3Latency</key>
@@ -257,15 +350,21 @@
 				<key>#PluginType</key>
 				<false/>
 				<key>CStates</key>
-				<true/>
+				<false/>
 				<key>PStates</key>
+				<false/>
+				<key>PluginType</key>
 				<true/>
 			</dict>
 		</dict>
 		<key>SortedOrder</key>
 		<array>
-			<string>ssdt.aml</string>
+			<string>SSDT-XOSI.aml</string>
+			<string>SSDT-GPRW.aml</string>
 			<string>SSDT-PNLF.aml</string>
+			<string>SSDT-SMBUS.aml</string>
+			<string>SSDT-SDXC.aml</string>
+			<string>SSDT-SMEE.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -554,7 +653,7 @@
 			<key>AFGLowPowerState</key>
 			<true/>
 			<key>Inject</key>
-			<string>3</string>
+			<integer>3</integer>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -703,11 +802,6 @@
 		<false/>
 		<key>CustomIcons</key>
 		<true/>
-		<key>Hide</key>
-		<array>
-			<string>Preboot</string>
-			<string>Recovery</string>
-		</array>
 		<key>Language</key>
 		<string>pl:0</string>
 		<key>Scan</key>

@@ -1,7 +1,7 @@
 # Najwydajniejszy Hackintosh aka dump configów
 Jeśli używasz tego configu u siebie wygeneruj ponownie SMBIOS.
 
-### Hardware 
+### Hardware
 
 ```
 # Custom PC CoffeLake
@@ -11,17 +11,26 @@ Karta Graficzna: AMD ASUS RX580 8GB
 RAM: HyperX Fury 16GB DDR4 2133MHz
 LAN: Intel I219-V Gigabit
 Wi-Fi: BCM943602CS
-Kontroler audio: Realtek ALC892 
+Kontroler audio: Realtek ALC892
 ```
 ```
 # Custom PC KabyLake
 Płyta główna: MSI B250m Mortar
 Procesor: Intel i5-7400
 Karta graficzna: Gigabyte RX460 2GB
-RAM: 16GB
+RAM: 8GB
 Karta sieciowa ethernet: Intel I219-V Gigabit
 Wi-Fi: BCM94331CD
 Kontroler audio: Realtek ALC892
+```
+```
+# Dell Inspiron 5370
+Płyta główna: Dell Latitude 3340
+Procesor: Intel i3-7130U
+Karta graficzna: Intel HD 620
+RAM: 4GB
+Wi-Fi: Qualcomm QCA9377
+Kontroler audio: Realtek ALC295
 ```
 ```
 # Dell Latitude 3340

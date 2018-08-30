@@ -75,13 +75,13 @@
 				<key>AddPNLF</key>
 				<false/>
 				<key>DeleteUnused</key>
-				<true/>
+				<false/>
 				<key>FakeLPC</key>
 				<false/>
 				<key>FixACST</key>
 				<false/>
 				<key>FixADP1</key>
-				<false/>
+				<true/>
 				<key>FixAirport</key>
 				<false/>
 				<key>FixDarwin</key>
@@ -185,6 +185,84 @@
 					WERTTQ==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _OSI to XOSI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X09TSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WE9TSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change GPRW to XPRW</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R1BSVwpw
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBSVwpw
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>rename _STA to XSTA in MATH</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1NUQQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFNUQQ==
+					</data>
+					<key>TgtBridge</key>
+					<data>
+					TUFUSA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change EC0_ to EC__</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUMwXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>rename _STA to XSTA in GPI0</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1NUQQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFNUQQ==
+					</data>
+					<key>TgtBridge</key>
+					<data>
+					R1BJMA==
+					</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -196,20 +274,6 @@
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>CpuPm</string>
-			</dict>
-			<dict>
-				<key>#Length</key>
-				<integer>720</integer>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Ist</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
@@ -273,6 +337,8 @@
 		</dict>
 		<key>SortedOrder</key>
 		<array>
+			<string>SSDT-XOSI.aml</string>
+			<string>SSDT-GPRW.aml</string>
 			<string>SSDT-PNLF.aml</string>
 		</array>
 	</dict>
@@ -748,8 +814,14 @@
 		</dict>
 		<key>#TextOnly</key>
 		<false/>
+		<key>Hide</key>
+		<array>
+			<string>preboot</string>
+		</array>
 		<key>Language</key>
 		<string>pl:0</string>
+		<key>Scan</key>
+		<true/>
 		<key>ScreenResolution</key>
 		<string>1366x768</string>
 		<key>ShowOptimus</key>

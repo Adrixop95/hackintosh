@@ -28,9 +28,19 @@ Kontroler audio: Realtek ALC892
 Płyta główna: Dell Latitude 3340
 Procesor: Intel i3-7130U
 Karta graficzna: Intel HD 620
-RAM: 4GB
+RAM: 8GB
 Wi-Fi: Qualcomm QCA9377
 Kontroler audio: Realtek ALC295
+```
+```
+# Acer Aspire E5-574
+Płyta główna: Acer Aspire E5-574
+Procesor: Intel i3-5005u
+Karta graficzna: Intel HD 5500
+Karta graficzna dedykowana: Nvidia GeForce 920M
+RAM: 8GB
+Wi-Fi: Qualcomm DW1560 / BCM4352
+Kontroler audio: Realtek ALC255
 ```
 ```
 # Dell Latitude 3340

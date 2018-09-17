@@ -32,43 +32,15 @@ RAM: 8GB
 Wi-Fi: Qualcomm QCA9377
 Kontroler audio: Realtek ALC295
 ```
-```
-# Acer Aspire E5-574
-Płyta główna: Acer Aspire E5-574
-Procesor: Intel i3-5005u
-Karta graficzna: Intel HD 5500
-Karta graficzna dedykowana: Nvidia GeForce 920M
-RAM: 8GB
-Wi-Fi: Qualcomm DW1560 / BCM4352
-Kontroler audio: Realtek ALC255
-```
-```
-# Dell Latitude 3340
-Płyta główna: Dell Latitude 3340
-Procesor: Intel i5-4200U
-Karta graficzna: Intel HD 4400
-RAM: 8GB
-Karta sieciowa ethernet: Intel I218-LM
-Wi-Fi: DW1560 / BCM4352
-Kontroler audio: Realtek ALC255
-Czytnik kart pamięci: O2Micro / ID urządzenia: 1217-8520 / ID podsystemu: 1028-061F
-Touchpad: Alps v3
-```
+
 
 ### Status
 Custom PC CoffeLake
 + Soon™
 
-
 Custom PC KabyLake
 
-+ W pełni skonfigurowany.
-+ Dualboot Windows 10 + macOS 10.13 High Sierra.
++ Dualboot Windows 10 + macOS 10.13 High Sierra 10.13.5.
 
-Dell Latitude 3340
-
-+ Brak czasu/chęci na poprawki.
-+ Problemy z touchpadem.
-+ Problemy z wyjściem Mini Displayport.
-+ Problemy z czytnikiem kart pamięci.
-+ ?????
+Dell Inspiron 5370
++ Soon™

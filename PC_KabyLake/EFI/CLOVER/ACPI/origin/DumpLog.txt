@@ -1,0 +1,128 @@
+40:070  37:118  Found UEFI Acpi 2.0 RSDP at 8F4B6000
+40:070  0:000  Saving ACPI tables from RSDP 8F4B6000 to EFI\CLOVER\ACPI\origin ...
+40:070  0:000   8F4B6000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+40:093  0:023    (Xsdt: 8F4B60B0, Rsdt: 8F4B6028)
+40:093  0:000    8F4B60B0: 'XSDT', 'A M I', Rev: 1, Len: 220 -> XSDT.aml
+40:112  0:018    8F4B6028: 'RSDT', 'A M I', Rev: 1, Len: 128 -> RSDT.aml
+40:130  0:018    Tables in Xsdt: 23
+40:130  0:000    0. 8F4DEFA8: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
+40:149  0:018        (Dsdt: 8F4B6220, Facs: 8F53ED80, XDsdt: 8F4B6220, XFacs: 0)
+40:149  0:000        8F4B6220: 'DSDT', 'A M I', Rev: 2, Len: 167300 -> DSDT.aml
+40:183  0:034        8F53ED80: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+40:204  0:020    1. 8F4DF0C0: 'APIC', 'A M I', Rev: 3, Len: 132 -> APIC.aml
+40:223  0:019    2. 8F4DF148: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+40:244  0:020    3. 8F4DF190: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+40:265  0:020    4. 8F4DF230: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+40:286  0:020    5. 8F4DF270: 'SSDT', 'SataTabl', Rev: 1, Len: 931 -> SSDT-0-SataTabl.aml
+40:307  0:020    6. 8F4DF618: 'SSDT', 'SaSsdt', Rev: 2, Len: 12662 -> SSDT-1-SaSsdt.aml
+40:330  0:023    7. 8F4E2790: 'SSDT', 'PegSsdt', Rev: 2, Len: 9637 -> SSDT-2-PegSsdt.aml
+40:354  0:023    8. 8F4E4D38: 'HPET', 'KBL', Rev: 1, Len: 56 -> HPET.aml
+40:374  0:020    9. 8F4E4D70: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3557 -> SSDT-3-Ther_Rvp.aml
+40:394  0:019    10. 8F4E5B58: 'SSDT', 'xh_rvp08', Rev: 2, Len: 2605 -> SSDT-4-xh_rvp08.aml
+40:415  0:020    11. 8F4E6588: 'UEFI', 'A M I', Rev: 1, Len: 66 -> UEFI.aml
+40:435  0:020    12. 8F4E65D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806 -> SSDT-5-CpuSsdt.aml (Found hidden SSDT 7 pcs)
+40:455  0:019        * 8F0AE098: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1683  53 53 44 54 93 06 00 00 02 4F 50 6D 52 65 66 00 Internal length = 1683 -> SSDT-x5_0-Cpu0Ist.aml
+40:479  0:023        * 8F09E198: 'SSDT', 'ApIst', Rev: 2, Len: 1628  53 53 44 54 5C 06 00 00 02 AF 50 6D 52 65 66 00 Internal length = 1628 -> SSDT-x5_1-ApIst.aml
+40:499  0:020        * 8F087018: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1023  53 53 44 54 FF 03 00 00 02 AF 50 6D 52 65 66 00 Internal length = 1023 -> SSDT-x5_2-Cpu0Cst.aml
+40:519  0:019        * 8F087D18: 'SSDT', 'ApCst', Rev: 2, Len: 394  53 53 44 54 8A 01 00 00 02 39 50 6D 52 65 66 00 Internal length = 394 -> SSDT-x5_3-ApCst.aml
+40:539  0:019        * 8F09E018: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 277  53 53 44 54 15 01 00 00 02 AE 50 6D 52 65 66 00 Internal length = 277 -> SSDT-x5_4-Cpu0Hwp.aml
+40:558  0:018        * 8F087698: 'SSDT', 'ApHwp', Rev: 2, Len: 407  53 53 44 54 97 01 00 00 02 F1 50 6D 52 65 66 00 Internal length = 407 -> SSDT-x5_5-ApHwp.aml
+40:580  0:022        * 8F09EC18: 'SSDT', 'HwpLvt', Rev: 2, Len: 420  53 53 44 54 A4 01 00 00 02 3C 50 6D 52 65 66 00 Internal length = 420 -> SSDT-x5_6-HwpLvt.aml
+40:601  0:020  
+40:601  0:000    13. 8F4E74B0: 'LPIT', 'KBL', Rev: 1, Len: 148 -> LPIT.aml
+40:620  0:018    14. 8F4E7548: 'SSDT', 'HdaDsp', Rev: 2, Len: 321 -> SSDT-6-HdaDsp.aml
+40:639  0:019    15. 8F4E7690: 'SSDT', 'sensrhub', Rev: 2, Len: 671 -> SSDT-7-sensrhub.aml
+40:660  0:020    16. 8F4E7930: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290 -> SSDT-8-PtidDevc.aml
+40:682  0:022    17. 8F4EA938: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303 -> SSDT-9-TbtTypeC.aml
+40:706  0:023    18. 8F4EAE50: 'DBGP', '', Rev: 1, Len: 52 -> DBGP.aml
+40:726  0:019    19. 8F4EAE88: 'DBG2', '', Rev: 0, Len: 84 -> DBG2.aml
+40:745  0:019    20. 8F4EAEE0: 'VFCT', 'A M I', Rev: 1, Len: 59012 -> VFCT.aml
+40:771  0:025    21. 8F4F9568: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
+40:792  0:020    22. 8F4F95A0: 'WSMT', 'A M I', Rev: 1, Len: 40 -> WSMT.aml
+40:812  0:020    Tables in Rsdt: 23
+40:812  0:000    0. 8F4B6198: 'FACP', 'A M I', Rev: 2, Len: 132 -> RSDT-FACP.aml
+40:832  0:019        (Dsdt: 8F4B6220, Facs: 8F53ED40)
+40:832  0:000        8F4B6220: 'DSDT', 'A M I', Rev: 2, Len: 167300
+40:835  0:002        8F53ED40: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+40:855  0:019    1. 8F4DF0C0: 'APIC', 'A M I', Rev: 3, Len: 132
+40:855  0:000    2. 8F4DF148: 'FPDT', 'A M I', Rev: 1, Len: 68
+40:855  0:000    3. 8F4DF190: 'FIDT', 'A M I', Rev: 1, Len: 156
+40:855  0:000    4. 8F4DF230: 'MCFG', 'A M I', Rev: 1, Len: 60
+40:855  0:000    5. 8F4DF270: 'SSDT', 'SataTabl', Rev: 1, Len: 931
+40:855  0:000    6. 8F4DF618: 'SSDT', 'SaSsdt', Rev: 2, Len: 12662
+40:855  0:000    7. 8F4E2790: 'SSDT', 'PegSsdt', Rev: 2, Len: 9637
+40:855  0:000    8. 8F4E4D38: 'HPET', 'KBL', Rev: 1, Len: 56
+40:855  0:000    9. 8F4E4D70: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3557
+40:855  0:000    10. 8F4E5B58: 'SSDT', 'xh_rvp08', Rev: 2, Len: 2605
+40:855  0:000    11. 8F4E6588: 'UEFI', 'A M I', Rev: 1, Len: 66
+40:855  0:000    12. 8F4E65D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+40:855  0:000    13. 8F4E74B0: 'LPIT', 'KBL', Rev: 1, Len: 148
+40:855  0:000    14. 8F4E7548: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+40:855  0:000    15. 8F4E7690: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+40:855  0:000    16. 8F4E7930: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+40:855  0:000    17. 8F4EA938: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+40:855  0:000    18. 8F4EAE50: 'DBGP', '', Rev: 1, Len: 52
+40:855  0:000    19. 8F4EAE88: 'DBG2', '', Rev: 0, Len: 84
+40:855  0:000    20. 8F4EAEE0: 'VFCT', 'A M I', Rev: 1, Len: 59012
+40:855  0:000    21. 8F4F9568: 'BGRT', 'A M I', Rev: 1, Len: 56
+40:855  0:000    22. 8F4F95A0: 'WSMT', 'A M I', Rev: 1, Len: 40
+40:855  0:000  Found UEFI Acpi 1.0 RSDP at 8F4B6000
+40:855  0:000  Printing ACPI tables from RSDP 8F4B6000 ...
+40:855  0:000   8F4B6000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+40:855  0:000    (Xsdt: 8F4B60B0, Rsdt: 8F4B6028)
+40:855  0:000    8F4B60B0: 'XSDT', 'A M I', Rev: 1, Len: 220
+40:855  0:000    8F4B6028: 'RSDT', 'A M I', Rev: 1, Len: 128
+40:855  0:000    Tables in Xsdt: 23
+40:855  0:000    0. 8F4DEFA8: 'FACP', 'A M I', Rev: 6, Len: 276
+40:855  0:000        (Dsdt: 8F4B6220, Facs: 8F53ED80, XDsdt: 8F4B6220, XFacs: 0)
+40:855  0:000        8F4B6220: 'DSDT', 'A M I', Rev: 2, Len: 167300
+40:858  0:002        8F53ED80: 'FACS', Ver: 2, Len: 64
+40:858  0:000    1. 8F4DF0C0: 'APIC', 'A M I', Rev: 3, Len: 132
+40:858  0:000    2. 8F4DF148: 'FPDT', 'A M I', Rev: 1, Len: 68
+40:858  0:000    3. 8F4DF190: 'FIDT', 'A M I', Rev: 1, Len: 156
+40:858  0:000    4. 8F4DF230: 'MCFG', 'A M I', Rev: 1, Len: 60
+40:858  0:000    5. 8F4DF270: 'SSDT', 'SataTabl', Rev: 1, Len: 931
+40:858  0:000    6. 8F4DF618: 'SSDT', 'SaSsdt', Rev: 2, Len: 12662
+40:858  0:000    7. 8F4E2790: 'SSDT', 'PegSsdt', Rev: 2, Len: 9637
+40:858  0:000    8. 8F4E4D38: 'HPET', 'KBL', Rev: 1, Len: 56
+40:858  0:000    9. 8F4E4D70: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3557
+40:858  0:000    10. 8F4E5B58: 'SSDT', 'xh_rvp08', Rev: 2, Len: 2605
+40:858  0:000    11. 8F4E6588: 'UEFI', 'A M I', Rev: 1, Len: 66
+40:858  0:000    12. 8F4E65D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+40:858  0:000    13. 8F4E74B0: 'LPIT', 'KBL', Rev: 1, Len: 148
+40:858  0:000    14. 8F4E7548: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+40:858  0:000    15. 8F4E7690: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+40:858  0:000    16. 8F4E7930: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+40:858  0:000    17. 8F4EA938: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+40:858  0:000    18. 8F4EAE50: 'DBGP', '', Rev: 1, Len: 52
+40:858  0:000    19. 8F4EAE88: 'DBG2', '', Rev: 0, Len: 84
+40:858  0:000    20. 8F4EAEE0: 'VFCT', 'A M I', Rev: 1, Len: 59012
+40:858  0:000    21. 8F4F9568: 'BGRT', 'A M I', Rev: 1, Len: 56
+40:858  0:000    22. 8F4F95A0: 'WSMT', 'A M I', Rev: 1, Len: 40
+40:858  0:000    Tables in Rsdt: 23
+40:858  0:000    0. 8F4B6198: 'FACP', 'A M I', Rev: 2, Len: 132
+40:858  0:000        (Dsdt: 8F4B6220, Facs: 8F53ED40)
+40:858  0:000        8F4B6220: 'DSDT', 'A M I', Rev: 2, Len: 167300
+40:860  0:002        8F53ED40: 'FACS', Ver: 0, Len: 64
+40:860  0:000    1. 8F4DF0C0: 'APIC', 'A M I', Rev: 3, Len: 132
+40:860  0:000    2. 8F4DF148: 'FPDT', 'A M I', Rev: 1, Len: 68
+40:860  0:000    3. 8F4DF190: 'FIDT', 'A M I', Rev: 1, Len: 156
+40:860  0:000    4. 8F4DF230: 'MCFG', 'A M I', Rev: 1, Len: 60
+40:860  0:000    5. 8F4DF270: 'SSDT', 'SataTabl', Rev: 1, Len: 931
+40:860  0:000    6. 8F4DF618: 'SSDT', 'SaSsdt', Rev: 2, Len: 12662
+40:860  0:000    7. 8F4E2790: 'SSDT', 'PegSsdt', Rev: 2, Len: 9637
+40:860  0:000    8. 8F4E4D38: 'HPET', 'KBL', Rev: 1, Len: 56
+40:860  0:000    9. 8F4E4D70: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3557
+40:860  0:000    10. 8F4E5B58: 'SSDT', 'xh_rvp08', Rev: 2, Len: 2605
+40:860  0:000    11. 8F4E6588: 'UEFI', 'A M I', Rev: 1, Len: 66
+40:860  0:000    12. 8F4E65D0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+40:860  0:000    13. 8F4E74B0: 'LPIT', 'KBL', Rev: 1, Len: 148
+40:860  0:000    14. 8F4E7548: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+40:860  0:000    15. 8F4E7690: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+40:860  0:000    16. 8F4E7930: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+40:860  0:000    17. 8F4EA938: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+40:860  0:000    18. 8F4EAE50: 'DBGP', '', Rev: 1, Len: 52
+40:860  0:000    19. 8F4EAE88: 'DBG2', '', Rev: 0, Len: 84
+40:860  0:000    20. 8F4EAEE0: 'VFCT', 'A M I', Rev: 1, Len: 59012
+40:860  0:000    21. 8F4F9568: 'BGRT', 'A M I', Rev: 1, Len: 56
+40:860  0:000    22. 8F4F95A0: 'WSMT', 'A M I', Rev: 1, Len: 40

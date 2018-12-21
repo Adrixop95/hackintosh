@@ -29,7 +29,7 @@ Kontroler audio: Realtek ALC892
 
 ## Dell Inspiron 5370
 ```
-Płyta główna: Dell Latitude 3340
+Płyta główna: Dell Inspiron 5370
 Procesor: Intel i3-7130U
 Karta graficzna: Intel HD 620
 RAM: 8GB
@@ -40,11 +40,11 @@ Kontroler audio: Realtek ALC295
 
 # Status
 Custom PC CoffeLake
-+ Soon™
++ Dualboot Windows 10 + macOS 10.14.2
 
 Custom PC KabyLake
 
-+ Dualboot Windows 10 + macOS 10.13 High Sierra 10.14.1.
++ Dualboot Windows 10 + macOS 10.14.2 High Sierra
 
 Dell Inspiron 5370
 + Soon™

@@ -44,7 +44,7 @@ Custom PC CoffeLake
 
 Custom PC KabyLake
 
-+ Dualboot Windows 10 + macOS 10.14.2 High Sierra
++ Dualboot Windows 10 + macOS 10.14.2
 
 Dell Inspiron 5370
 + Soon™

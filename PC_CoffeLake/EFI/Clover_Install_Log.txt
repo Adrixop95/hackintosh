@@ -1,6 +1,6 @@
 
-Clover EFI installer log - Fri Dec 21 21:58:06 CET 2018
-Installer version: v2.4k r4815 EFI bootloader
+Clover EFI installer log - Sun Dec 23 16:54:56 CET 2018
+Installer version: v2.4k r4819 EFI bootloader
 ======================================================
 /dev/disk0 (internal):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
@@ -8,7 +8,7 @@ Installer version: v2.4k r4815 EFI bootloader
    1:           Windows Recovery                         523.2 MB   disk0s1
    2:                        EFI NO NAME                 104.9 MB   disk0s2
    3:         Microsoft Reserved                         16.8 MB    disk0s3
-   4:       Microsoft Basic Data Windows                 238.6 GB   disk0s4
+   4:       Microsoft Basic Data                         238.6 GB   disk0s4
    5:           Windows Recovery                         857.7 MB   disk0s5
 
 /dev/disk1 (internal, physical):
@@ -16,26 +16,26 @@ Installer version: v2.4k r4815 EFI bootloader
    0:     FDisk_partition_scheme                        *1.0 TB     disk1
    1:               Windows_NTFS                         1.0 TB     disk1s1
 
-/dev/disk3 (internal, physical):
+/dev/disk2 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *120.0 GB   disk3
-   1:                        EFI EFI                     209.7 MB   disk3s1
-   2:                 Apple_APFS Container disk4         119.8 GB   disk3s2
+   0:      GUID_partition_scheme                        *120.0 GB   disk2
+   1:                        EFI EFI                     209.7 MB   disk2s1
+   2:                 Apple_APFS Container disk3         119.8 GB   disk2s2
 
-/dev/disk4 (synthesized):
+/dev/disk3 (synthesized):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      APFS Container Scheme -                      +119.8 GB   disk4
-                                 Physical Store disk3s2
-   1:                APFS Volume Macintosh HD            14.5 GB    disk4s1
-   2:                APFS Volume Preboot                 46.5 MB    disk4s2
-   3:                APFS Volume Recovery                517.0 MB   disk4s3
-   4:                APFS Volume VM                      2.1 GB     disk4s4
+   0:      APFS Container Scheme -                      +119.8 GB   disk3
+                                 Physical Store disk2s2
+   1:                APFS Volume Macintosh HD            61.6 GB    disk3s1
+   2:                APFS Volume Preboot                 46.5 MB    disk3s2
+   3:                APFS Volume Recovery                517.0 MB   disk3s3
+   4:                APFS Volume VM                      2.1 GB     disk3s4
 
-Target volume /Volumes/Macintosh HD on disk4 is APFS on physical store disk3s2
+Target volume /Volumes/Macintosh HD on disk3 is APFS on physical store disk2s2
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/Macintosh HD/EFIROOTDIR/EFI folder to /Volumes/Macintosh HD/EFI-Backups/r4815/2018-12-21-21h58/EFI
+Backing up /Volumes/Macintosh HD/EFIROOTDIR/EFI folder to /Volumes/Macintosh HD/EFI-Backups/r4815/2018-12-23-16h54/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
